@@ -6,19 +6,19 @@ export default {
 </script>
 
 <template>
-    <input type="number" :value="modelValue" @input="$emit('update:modelValue', parseFloat($event.target.value))" />
+    <input class="form-control mb-4" type="number" :value="modelValue" @input="$emit('update:modelValue', parseFloat($event.target.value))" />
 </template>
 
 <style>
-input {
-    border-radius: 10px;
-    border: 1px solid #2263b9;
-    text-align: center;
-    color: #2263b9;
-}
+    .form-control {
+        width: 200px;
+        margin: 0 auto;
+        color: cornflowerblue;
+        border-color: cornflowerblue;
+    }
 
-input:focus {
-    outline: none;
-    border-color: #2263b9;
-}
+    .form-control:focus {
+        color: cornflowerblue;
+        font-weight: bold;
+    }
 </style>

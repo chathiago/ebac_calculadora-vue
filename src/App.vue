@@ -11,44 +11,36 @@ const operacao = ref('');
 </script>
 
 <template>
-  <div class="container mt-5">
-    <h3>Vue Calc</h3>
-    <div class="number-box">
-      <p>Primeiro valor:</p>
-      <Numeros v-model="valor1" />
-    </div>
-    <div class="number-box">
-      <p>Segundo valor:</p>
-      <Numeros v-model="valor2" />
-    </div>
-    <div class="number-box">
-      <p>Escolha a operação:</p>
-      <Operadores v-model="operacao" />
-    </div>
-    <div class="number-box">
-      <p>Resultado:</p>
-      <Resultados :valor1="valor1" :valor2="valor2" :operacao="operacao" />
+  <div class="container-sm text-center mt-4">
+    <h1 class="mb-4 fw-light text-uppercase">Vue Calc</h1>
+    <div class="row">
+      <div>
+        <p class="fw-bold">Primeiro valor:</p>
+        <Numeros v-model="valor1" />
+      </div>
+      <div>
+        <p class="fw-bold">Segundo valor:</p>
+        <Numeros v-model="valor2" />
+      </div>
+      <div>
+        <p class="fw-bold">Escolha a operação:</p>
+        <Operadores v-model="operacao" />
+      </div>
+      <div>
+        <p class="fw-bold">Resultado:</p>
+        <Resultados :valor1="valor1" :valor2="valor2" :operacao="operacao" />
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.container p {
-  color: #2a323d;
-}
+  h1 {
+    letter-spacing: 8px;
+    color:  rgb(37, 85, 174);
+  }
 
-.container h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-align: center;
-  color: #2263b9;
-}
-
-.number-box {
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-
-}
+  p {
+    color: rgb(37, 85, 174);
+  }
 </style>

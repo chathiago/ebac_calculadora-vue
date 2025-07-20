@@ -28,12 +28,12 @@ export default {
 </script>
 
 <template>
-    <strong>{{ resultado }}</strong>
+    <span class="fw-bold">{{ resultado }}</span>
 </template>
 
 <style>
-strong {
-    color: #2263b9;
-    font-size: 1em;
-}
+    span {
+        color: cornflowerblue;
+        font-size: 1.5rem;
+    }
 </style>
