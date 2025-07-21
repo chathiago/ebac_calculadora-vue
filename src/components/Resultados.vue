@@ -31,7 +31,7 @@ export default {
     <span class="fw-bold">{{ resultado }}</span>
 </template>
 
-<style>
+<style scoped>
     span {
         color: cornflowerblue;
         font-size: 1.5rem;

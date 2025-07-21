@@ -9,7 +9,7 @@ export default {
     <input class="form-control mb-4" type="number" :value="modelValue" @input="$emit('update:modelValue', parseFloat($event.target.value))" />
 </template>
 
-<style>
+<style scoped>
     .form-control {
         width: 200px;
         margin: 0 auto;
